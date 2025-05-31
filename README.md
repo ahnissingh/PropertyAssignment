@@ -32,12 +32,24 @@ A comprehensive backend system for managing property listings, built with Node.j
 Create a `.env` file in the root directory with the following variables:
 
 ```
+# Server Port
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/property_management
+
+# MongoDB connection string (update as needed)
+MONGODB_URI=mongodb+srv://your_username:your_password@cluster-journal-ai.qokch.mongodb.net/propertyDB?retryWrites=true&w=majority&appName=Cluster-journal-ai
+
+# JWT Secret (Make sure to change this in production!)
 JWT_SECRET=your_jwt_secret_key_change_in_production
-REDIS_HOST=localhost
-REDIS_PORT=6379
+
+# Redis Cloud Configuration
+REDIS_HOST=redis-18166.c81.us-east-1-2.ec2.redns.redis-cloud.com
+REDIS_PORT=18166
+REDIS_USERNAME=default                      # Optional: use if your Redis Cloud requires username
+REDIS_PASSWORD=your_redis_cloud_password   # Replace with your Redis Cloud password
+
+# Environment
 NODE_ENV=development
+
 ```
 
 ### Installation
