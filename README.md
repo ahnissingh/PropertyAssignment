@@ -33,22 +33,22 @@ Create a `.env` file in the root directory with the following variables:
 
 ```
 # Server Port
-PORT=5000
+PORT
 
 # MongoDB connection string (update as needed)
-MONGODB_URI=mongodb+srv://your_username:your_password@cluster-journal-ai.qokch.mongodb.net/propertyDB?retryWrites=true&w=majority&appName=Cluster-journal-ai
+MONGODB_URI
 
 # JWT Secret (Make sure to change this in production!)
-JWT_SECRET=your_jwt_secret_key_change_in_production
+JWT_SECRET
 
 # Redis Cloud Configuration
-REDIS_HOST=redis-18166.c81.us-east-1-2.ec2.redns.redis-cloud.com
-REDIS_PORT=18166
-REDIS_USERNAME=default                      # Optional: use if your Redis Cloud requires username
-REDIS_PASSWORD=your_redis_cloud_password   # Replace with your Redis Cloud password
+REDIS_HOST
+REDIS_PORT
+REDIS_USERNAME                  
+REDIS_PASSWORD 
 
 # Environment
-NODE_ENV=development
+NODE_ENV=production
 
 ```
 
